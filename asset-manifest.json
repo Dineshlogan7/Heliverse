@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/heliverse/static/css/main.97c548f1.css",
-    "main.js": "/heliverse/static/js/main.d672ab5f.js",
+    "main.css": "/heliverse/static/css/main.f013d321.css",
+    "main.js": "/heliverse/static/js/main.7c81ba12.js",
     "index.html": "/heliverse/index.html",
-    "main.97c548f1.css.map": "/heliverse/static/css/main.97c548f1.css.map",
-    "main.d672ab5f.js.map": "/heliverse/static/js/main.d672ab5f.js.map"
+    "main.f013d321.css.map": "/heliverse/static/css/main.f013d321.css.map",
+    "main.7c81ba12.js.map": "/heliverse/static/js/main.7c81ba12.js.map"
   },
   "entrypoints": [
-    "static/css/main.97c548f1.css",
-    "static/js/main.d672ab5f.js"
+    "static/css/main.f013d321.css",
+    "static/js/main.7c81ba12.js"
   ]
 }

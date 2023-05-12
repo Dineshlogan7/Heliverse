@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/heliverse/static/css/main.97c548f1.css",
+    "main.js": "/heliverse/static/js/main.d672ab5f.js",
+    "index.html": "/heliverse/index.html",
+    "main.97c548f1.css.map": "/heliverse/static/css/main.97c548f1.css.map",
+    "main.d672ab5f.js.map": "/heliverse/static/js/main.d672ab5f.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.97c548f1.css",
+    "static/js/main.d672ab5f.js"
+  ]
+}

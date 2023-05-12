@@ -144,16 +144,15 @@ function handleTeam(){
   };
   return (
     <div className="container">
-      <h3>Pagination and filters</h3>
+      <h3 className="heli">Heliverse</h3>
       <div className="mb-3">
         <label htmlFor="search" className="form-label">
-          Search
-        </label>
+          Search : </label>
         <input
           type="text"
           className=""
           id="search"
-          placeholder="Search Title"
+          placeholder="Search Name"
           value={searchTerm}
           onChange={(e) => {
             setSearchTerm(e.target.value);
@@ -173,7 +172,7 @@ function handleTeam(){
             setCurrentPage(1);
           }}
         >
-          <option defaultValue=""></option>
+          <option defaultValue="">Select Gender</option>
           <option value="Male">Male</option>
           <option value="Female">Female</option>
         </select>
@@ -188,7 +187,7 @@ function handleTeam(){
             setCurrentPage(1);
           }}
         >
-          <option defaultValue=""></option>
+          <option defaultValue="">Select Domain</option>
           <option value="IT">IT</option>
           <option value="Sales">Sales</option>
           <option value="Finance">Finance</option>
@@ -209,7 +208,7 @@ function handleTeam(){
             setCurrentPage(1);
           }}
         >
-          <option defaultValue=""></option>
+          <option defaultValue="">Select Availablity</option>
           <option value="true">TRUE</option>
           <option value="false">False</option>
         </select>
@@ -223,13 +222,13 @@ function handleTeam(){
           Reset Filters
         </button>
       </div>
-      <div><button onClick={()=>handleTeam()}><Link  to="Teams" spy={true} smooth={true}>Team</Link></button>
+      <div className="teams"><button className="team" onClick={()=>handleTeam()}><Link  to="Teams" spy={true} smooth={true}>Team</Link></button>
       </div>
       <nav>
         <ul className="pagination">
           {pageNumbers.map((number) => (
             <ul key={number} className="page-item">
-              <button onClick={() => paginate(number)} className="page-link">
+              <button className="page" onClick={() => paginate(number)} >
                 {number}
               </button>
             </ul>
@@ -251,7 +250,7 @@ function handleTeam(){
                 </p>
                 <div className='parents-7'>
                   <span className='parents-8'> {todo.gender} </span>
-                  <div className="cart"><button onClick={() => handleClick(todo)}>+</button></div>
+                  <div className=""><button className="cart" onClick={() => handleClick(todo)}>Add to Team</button></div>
                 </div>
               </div>
             </div>

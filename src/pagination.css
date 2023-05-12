@@ -5,9 +5,121 @@ body{
 .pagination{
   display: inline-flex;
 }
+.container{
+  text-align: center;
+}
+#search {
+  border: 1px solid grey;
+  border-radius: 5px;
+  height: 20px;
+  width: 40%;
+  padding: 2px 23px 2px 30px;
+  outline: 0;
+  background-color: #f5f5f5;
+}
+.search:hover, .search:focus {
+  border: 1.5px solid #009688;
+  background-color: white;
+}
+.teams{
+  align-items: right;
+  right: -100px;
+}
+.team{
+  
+  align-items: center;
+  background-color: #fee6e3;
+  border: 2px solid #111;
+  border-radius: 8px;
+  box-sizing: border-box;
+  color: #111;
+  cursor: pointer;
+  display: flex;
+  font-family: Inter,sans-serif;
+  font-size: 16px;
+  height: 48px;
+  justify-content: center;
+  line-height: 24px;
+  max-width: 100%;
+  padding: 0 25px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.team:after {
+  background-color: #111;
+  border-radius: 8px;
+  content: "";
+  display: block;
+  height: 48px;
+  left: 0;
+  width: 100%;
+  position: absolute;
+  top: -2px;
+  transform: translate(8px, 8px);
+  transition: transform .2s ease-out;
+  z-index: -1;
+}
+
+.team:hover:after {
+  transform: translate(0, 0);
+}
+
+.team:active {
+  background-color: #ffdeda;
+  outline: 0;
+}
+
+.team:hover {
+  outline: 0;
+}
+
+/* CSS */
+.cart {
+  background-color: initial;
+  background-image: linear-gradient(-180deg, #00D775, #00BD68);
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0 2px 4px;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Inter,-apple-system,system-ui,Roboto,"Helvetica Neue",Arial,sans-serif;
+  height: 44px;
+  line-height: 44px;
+  outline: 0;
+  overflow: hidden;
+  padding: 0 20px;
+  pointer-events: auto;
+  position: relative;
+  text-align: center;
+  touch-action: manipulation;
+  user-select: none;
+  -webkit-user-select: none;
+  vertical-align: top;
+  white-space: nowrap;
+  width: 100%;
+  z-index: 9;
+  border: 0;
+}
+
+.cart:hover {
+  background: #00bd68;
+}
+
 .cart{
-  margin-top: 15px;
-  margin-left: 200px;
+  margin-top: 5px;
+  margin-left: 30px;
+}
+.heli{
+  margin:10px;
+  justify-content: center;
+  font-weight: 800;
+  font-size: 50px;
+  color: rgb(35, 133, 133);
 }
 .parents-1{
   display: inline-flex;
@@ -65,4 +177,43 @@ body{
 }
 .click{
   transition: all .5s;
+}
+
+
+.page {
+  background-color: #0a6bff;
+  border-radius: 4px;
+  border: 0;
+  box-shadow: rgba(1,60,136,.5) 0 -1px 3px 0 inset,rgba(0,44,97,.1) 0 3px 6px 0;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inherit;
+  font-family: "Space Grotesk",-apple-system,system-ui,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 2px;
+  margin: 0;
+  min-height: 39px;
+  min-width: 39px;
+  padding: 6px 10px;
+  position: relative;
+  text-align: center;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: baseline;
+  transition: all .2s cubic-bezier(.22, .61, .36, 1);
+}
+
+.page:hover {
+  background-color: #065dd8;
+  transform: translateY(-2px);
+}
+
+@media (min-width: 768px) {
+  .page {
+    padding: 16px 44px;
+    min-width: 35px;
+  }
 }
